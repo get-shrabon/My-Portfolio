@@ -573,6 +573,7 @@ header {
     overflow: hidden;
 }
 
+
 .position-re {
     position: relative;
 }
@@ -589,14 +590,20 @@ header {
     height: 400px;
 }
 
-.post-img img:hover {
+.blog-item:hover .blog-img img {
     filter: blur(0);
     -webkit-filter: blur(0);
     transform: scale(1.5);
+
 }
 
-.post-img img:hover .content {
-    top: -100px;
+.blog-item:hover {
+    bottom: -0 !important;
+    overflow: visible;
+}
+.blog-item:hover .content{
+    bottom: -0px;
+    bottom: 50px;
 }
 
 .content {
@@ -637,6 +644,7 @@ header {
     line-height: 1.5;
     color: #fff;
     text-decoration: none;
+    font-size: 30px;
 }
 
 .content h5 a:hover {
@@ -649,6 +657,49 @@ header {
     font-weight: 500;
     padding-bottom: 10px;
     border-bottom: 1px solid #c49b66;
+    text-decoration: none;
+    color: white;
 }
-
+.content .more:hover{
+    color: #C49B66;
+}
+.blog-box{
+    margin-top: 100px;
+}
+@media screen and (max-width:576px) {
+    .blog-box{
+        gap: 30px;
+    }
+}
+@media screen and (min-width:577px) and (max-width:992px) {
+.blog-img img{
+    width: 100%;
+    height: 100%;
+}
+.blog-box{
+    gap: 50px;
+}
+}
 /* Blog Section Style End */
+
+/* Skill Section Style Start */
+.skill-contsiner{
+    background-color: #171616;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.skill-title{
+    font-size: 70px;
+    font-weight: 800;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 2px;
+    color: #222;
+    -webkit-transition: all .4s;
+    transition: all .4s;
+    text-align: center;
+}
+.skill-contsiner:hover .skill-title{
+    color: transparent;
+    -webkit-text-stroke: 1px #333;
+}
+/* Skill Section Style End */
