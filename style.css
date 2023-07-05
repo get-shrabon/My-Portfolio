@@ -207,49 +207,64 @@ header {
     color: gray;
     font-family: sans-serif;
 }
+
 .about-box {
     align-items: center;
 }
 
-.about-btns .butn{
+.about-btns .butn {
     margin-left: 0;
 }
+
 .butn-bord {
     background: transparent !important;
     border: 1px solid #eee !important;
     color: white !important;
 }
+
 .butn-bord:hover {
     border-color: #c49b66 !important;
 }
-.butn-bord::before, .butn-bord::after {
+
+.butn-bord::before,
+.butn-bord::after {
     background: #c49b66;
 }
-.butn-bord:hover::before{
+
+.butn-bord:hover::before {
     background: #c49b66;
 }
-.butn-bord:hover::after{
+
+.butn-bord:hover::after {
     background: #c49b66;
 }
+
 .butn-bord:hover span {
     color: #fff;
 }
+
 .butn:hover:after {
     -webkit-transition-delay: .2s;
     transition-delay: .2s;
 }
+
 .butn-light span {
     color: #c49b66;
 }
-.butn-light{
+
+.butn-light {
     background-color: white !important;
 }
-.butn-light:hover span{
+
+.butn-light:hover span {
     color: white !important;
 }
-.butn-light:before, .butn-light:after {
+
+.butn-light:before,
+.butn-light:after {
     background: #c49b66 !important;
 }
+
 .butn:hover:after {
     -webkit-transition-delay: .2s;
     transition-delay: .2s;
@@ -905,8 +920,8 @@ svg {
     width: 100%;
     height: auto;
     background-repeat: no-repeat;
-   background-size: cover;
-   background-attachment: fixed;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .contact-title {
@@ -924,21 +939,25 @@ svg {
     color: transparent;
     -webkit-text-stroke: 1px #333;
 }
-.conatact-box{
+
+.conatact-box {
     margin-top: 100px;
 }
-.contact-item{
+
+.contact-item {
     overflow-wrap: break-word;
     word-wrap: break-word;
     margin-bottom: 30px;
 }
-.contact-item p{
+
+.contact-item p {
     font-size: 16px;
     color: #8f8f8f;
     line-height: 1.8;
     margin: 0;
 }
-.contact-item h6{
+
+.contact-item h6 {
     color: #c49b66;
     margin-bottom: 5px;
     font-size: 11px;
@@ -946,7 +965,8 @@ svg {
     text-transform: uppercase;
     letter-spacing: 2px;
 }
-.form-group input{
+
+.form-group input {
     color: #fff;
     width: 100%;
     padding: 15px;
@@ -955,7 +975,8 @@ svg {
     border-radius: 30px;
     outline: none;
 }
-.form-group textarea{
+
+.form-group textarea {
     height: 160px;
     width: 100%;
     max-height: 160px;
@@ -965,11 +986,14 @@ svg {
     border: 0;
     background: #222;
     outline: none;
+    color: white !important;
 }
-.form-group{
+
+.form-group {
     margin-bottom: 1rem;
 }
-.butn{
+
+.butn {
     padding: 12px 34px;
     background: #fff;
     border-radius: 30px;
@@ -986,6 +1010,7 @@ svg {
     outline: none !important;
     overflow: hidden;
 }
+
 .butn-bg {
     background: #c49b66;
     border-color: #c49b66;
@@ -997,10 +1022,13 @@ form .butn {
     overflow: hidden;
     cursor: pointer;
 }
- .butn:hover {
+
+.butn:hover {
     border-color: #c49b66;
 }
-.butn:before, .butn:after {
+
+.butn:before,
+.butn:after {
     content: '';
     width: 0;
     height: 100%;
@@ -1013,46 +1041,96 @@ form .butn {
     z-index: 1;
     opacity: .4;
 }
+
 .butn:hover::before {
     width: 100%;
 }
+
 .butn span {
     position: relative;
     z-index: 2;
     -webkit-transition-delay: 0s;
     transition-delay: 0s;
 }
+
 .butn-bg:hover span {
     color: #c49b66;
 }
+
 .butn:hover span {
     -webkit-transition-delay: .2s;
     transition-delay: .2s;
 }
+
 .butn:after {
     -webkit-transition-delay: 0s;
     transition-delay: 0s;
     background: #fff;
     opacity: 1;
 }
+
 .butn:hover::after {
     width: 100% !important;
     -webkit-transition-delay: .2s;
     transition-delay: .2s;
 }
-span, a, a:hover {
+
+span,
+a,
+a:hover {
     display: inline-block;
     text-decoration: none;
     color: inherit;
 }
+
 /* Conatact Section Style End */
 
 /* Footer Style Start */
-footer{
+footer {
     background-color: #0F0F0F;
     width: 100%;
     height: auto;
     padding-top: 50px;
     padding-bottom: 50px;
+}
+
+.footer-item a {
+    color: white;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    margin: 15px 10px;
+    position: relative;
+    z-index: 2;
+}
+
+.footer-item a::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    background-color: #222;
+    z-index: -1;
+    -webkit-transition: all .4s;
+    transition: all .4s;
+}
+
+.footer-item a:hover:after {
+    background: #c49b66;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+footer p {
+    color: #999;
+    font-weight: 400;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
 }
 /* Footer Style End */
