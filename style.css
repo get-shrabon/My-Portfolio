@@ -601,7 +601,8 @@ header {
     bottom: -0 !important;
     overflow: visible;
 }
-.blog-item:hover .content{
+
+.blog-item:hover .content {
     bottom: -0px;
     bottom: 50px;
 }
@@ -660,35 +661,42 @@ header {
     text-decoration: none;
     color: white;
 }
-.content .more:hover{
+
+.content .more:hover {
     color: #C49B66;
 }
-.blog-box{
+
+.blog-box {
     margin-top: 100px;
 }
+
 @media screen and (max-width:576px) {
-    .blog-box{
+    .blog-box {
         gap: 30px;
     }
 }
+
 @media screen and (min-width:577px) and (max-width:992px) {
-.blog-img img{
-    width: 100%;
-    height: 100%;
+    .blog-img img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .blog-box {
+        gap: 50px;
+    }
 }
-.blog-box{
-    gap: 50px;
-}
-}
+
 /* Blog Section Style End */
 
 /* Skill Section Style Start */
-.skill-contsiner{
-    background-color: #171616;
+.skill-contsiner {
+    background-color: #E3ECF9;
     padding-top: 50px;
     padding-bottom: 50px;
 }
-.skill-title{
+
+.skill-title {
     font-size: 70px;
     font-weight: 800;
     font-family: Arial, Helvetica, sans-serif;
@@ -698,8 +706,43 @@ header {
     transition: all .4s;
     text-align: center;
 }
-.skill-contsiner:hover .skill-title{
+
+.skill-contsiner:hover .skill-title {
     color: transparent;
     -webkit-text-stroke: 1px #333;
+}
+
+.skill {
+    width: 160px;
+    height: 160px;
+    position: relative;
+}
+
+.outer {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    padding: 20px;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+        -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+
+}
+
+.inner {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+        inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
+        -0.5px -0.5px 0px rgba(255, 255, 255, 1),
+        0px 12px 10px -10px rgba(0,0,0,0.05);
+}
+
+#number{
+    font-weight: 600;
+    color: #555;
 }
 /* Skill Section Style End */
