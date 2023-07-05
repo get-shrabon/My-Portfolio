@@ -713,7 +713,7 @@ header {
     text-align: center;
 }
 
-.skill-contsiner:hover .skill-title {
+.skill-container:hover .skill-title {
     color: transparent;
     -webkit-text-stroke: 1px #333;
 }
@@ -870,12 +870,87 @@ svg {
         stroke-dashoffset: 188;
     }
 }
+
 @media screen and (max-width:576px) {
-    .skill-box{
+    .skill-box {
         display: flex;
         flex-direction: column;
         gap: 100px;
         align-items: center;
     }
 }
+
 /* Skill Section Style End */
+
+/* Conatact Section Style Start */
+.contact-container {
+    background-image: url("./images/contact-bg.svg");
+    padding-top: 100px;
+    padding-bottom: 100px;
+    width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.contact-title {
+    font-size: 70px;
+    font-weight: 800;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 2px;
+    color: #4e4a4a;
+    -webkit-transition: all .4s;
+    transition: all .4s;
+    text-align: center;
+}
+
+.contact-container:hover .contact-title {
+    color: transparent;
+    -webkit-text-stroke: 1px #333;
+}
+.conatact-box{
+    margin-top: 100px;
+}
+.contact-item{
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    margin-bottom: 30px;
+}
+.contact-item p{
+    font-size: 16px;
+    color: #8f8f8f;
+    line-height: 1.8;
+    margin: 0;
+}
+.contact-item h6{
+    color: #c49b66;
+    margin-bottom: 5px;
+    font-size: 11px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.form-group input{
+    color: #fff;
+    width: 100%;
+    padding: 15px;
+    border: 0;
+    background: #222;
+    border-radius: 30px;
+    outline: none;
+}
+.form-group textarea{
+    height: 160px;
+    width: 100%;
+    max-height: 160px;
+    max-width: 100%;
+    border-radius: 10px;
+    padding: 15px;
+    border: 0;
+    background: #222;
+    outline: none;
+}
+.form-group{
+    margin-bottom: 1rem;
+}
+/* Conatact Section Style End */
