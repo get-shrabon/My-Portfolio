@@ -207,37 +207,52 @@ header {
     color: gray;
     font-family: sans-serif;
 }
-
-.primary-btn {
-    width: 150px;
-    height: 50px;
-    border-radius: 40px;
-    background: transparent;
-    border: 1px solid #C49B66;
-    color: white;
-    transition: .5s ease-in;
-}
-
-.primary-btn:hover {
-    background-image: linear-gradient(60deg, #c77f21, rgb(126, 3, 3));
-}
-
-.secondary-btn {
-    width: 150px;
-    height: 50px;
-    border-radius: 40px;
-    background-image: linear-gradient(90deg, #c77f21, rgb(126, 3, 3));
-    border: 1px solid #C49B66;
-    color: white;
-    transition: .5s ease-out;
-}
-
-.secondary-btn:hover {
-    background: transparent;
-}
-
 .about-box {
     align-items: center;
+}
+
+.about-btns .butn{
+    margin-left: 0;
+}
+.butn-bord {
+    background: transparent !important;
+    border: 1px solid #eee !important;
+    color: white !important;
+}
+.butn-bord:hover {
+    border-color: #c49b66 !important;
+}
+.butn-bord::before, .butn-bord::after {
+    background: #c49b66;
+}
+.butn-bord:hover::before{
+    background: #c49b66;
+}
+.butn-bord:hover::after{
+    background: #c49b66;
+}
+.butn-bord:hover span {
+    color: #fff;
+}
+.butn:hover:after {
+    -webkit-transition-delay: .2s;
+    transition-delay: .2s;
+}
+.butn-light span {
+    color: #c49b66;
+}
+.butn-light{
+    background-color: white !important;
+}
+.butn-light:hover span{
+    color: white !important;
+}
+.butn-light:before, .butn-light:after {
+    background: #c49b66 !important;
+}
+.butn:hover:after {
+    -webkit-transition-delay: .2s;
+    transition-delay: .2s;
 }
 
 @media screen and (max-width:576px) {
@@ -891,6 +906,7 @@ svg {
     height: auto;
     background-repeat: no-repeat;
    background-size: cover;
+   background-attachment: fixed;
 }
 
 .contact-title {
@@ -953,4 +969,90 @@ svg {
 .form-group{
     margin-bottom: 1rem;
 }
+.butn{
+    padding: 12px 34px;
+    background: #fff;
+    border-radius: 30px;
+    border: 1px solid transparent;
+    position: relative;
+    z-index: 3;
+    margin-left: 10px;
+    margin-right: 10px;
+    -webkit-box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    -webkit-transition: all .4s;
+    transition: all .4s;
+    cursor: pointer;
+    outline: none !important;
+    overflow: hidden;
+}
+.butn-bg {
+    background: #c49b66;
+    border-color: #c49b66;
+    color: #fff;
+}
+
+form .butn {
+    float: right;
+    overflow: hidden;
+    cursor: pointer;
+}
+ .butn:hover {
+    border-color: #c49b66;
+}
+.butn:before, .butn:after {
+    content: '';
+    width: 0;
+    height: 100%;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    top: 0;
+    -webkit-transition: width 0.4s;
+    transition: width 0.4s;
+    z-index: 1;
+    opacity: .4;
+}
+.butn:hover::before {
+    width: 100%;
+}
+.butn span {
+    position: relative;
+    z-index: 2;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+}
+.butn-bg:hover span {
+    color: #c49b66;
+}
+.butn:hover span {
+    -webkit-transition-delay: .2s;
+    transition-delay: .2s;
+}
+.butn:after {
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+    background: #fff;
+    opacity: 1;
+}
+.butn:hover::after {
+    width: 100% !important;
+    -webkit-transition-delay: .2s;
+    transition-delay: .2s;
+}
+span, a, a:hover {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+}
 /* Conatact Section Style End */
+
+/* Footer Style Start */
+footer{
+    background-color: #0F0F0F;
+    width: 100%;
+    height: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+/* Footer Style End */

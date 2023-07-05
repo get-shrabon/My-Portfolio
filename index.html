@@ -90,9 +90,13 @@
                                 setting
                                 industry when per conubia nostra.</p>
                         </div>
-                        <div class="mt-5 d-flex gap-5">
-                            <button type="button" class="primary-btn">Download CV</button>
-                            <button type="button" class="secondary-btn">Hire Me!</button>
+                        <div class="mt-5 d-flex gap-5 about-btns">
+                           <a class="butn butn-bord" href="#">
+                            <span>Download CV</span>
+                           </a>
+                           <a class="butn butn-light" href="#">
+                            <span>Hire Me</span>
+                           </a>
                         </div>
                     </div>
                 </div>
@@ -415,14 +419,21 @@
                                 </div>
                                 <div class="col-md-12">
                                     <div class="form-group">
-                                        <input type="text" id="form_subject" name="subject" placeholder="Subject" required>
+                                        <input type="text" id="form_subject" name="subject" placeholder="Subject"
+                                            required>
                                     </div>
                                 </div>
                                 <div class="col-md-12">
                                     <div class="form-group">
-                                       
-                                        <textarea name="message" id="form_message"  rows="4" placeholder="Message"></textarea>
+
+                                        <textarea name="message" id="form_message" rows="4"
+                                            placeholder="Message"></textarea>
                                     </div>
+                                </div>
+                                <div class="col-md-12 text-center">
+                                    <button type="button" class="butn butn-bg disabled">
+                                        <span>Send Message</span>
+                                    </button>
                                 </div>
                             </div>
                         </form>
@@ -433,7 +444,9 @@
         <!-- Conatact Section End -->
     </main>
     <footer>
+        <div class="container footer-container">
 
+        </div>
     </footer>
 
     <!-- JS Script -->
@@ -460,36 +473,36 @@
     <script>
         let number = document.getElementById("number-1")
         let counter = 0;
-        setInterval(() =>{
-            if(counter == 65){
+        setInterval(() => {
+            if (counter == 65) {
                 clearInterval();
-            }else{
-                counter +=1;
-            number.innerHTML = counter + "%";
+            } else {
+                counter += 1;
+                number.innerHTML = counter + "%";
             }
         }, 30)
     </script>
     <script>
         let numberTwo = document.getElementById("number-2")
         let counterTwo = 0;
-        setInterval(() =>{
-            if(counterTwo == 75){
+        setInterval(() => {
+            if (counterTwo == 75) {
                 clearInterval();
-            }else{
-                counterTwo +=1;
-            numberTwo.innerHTML = counterTwo + "%";
+            } else {
+                counterTwo += 1;
+                numberTwo.innerHTML = counterTwo + "%";
             }
         }, 20)
     </script>
     <script>
         let numberThree = document.getElementById("number-3")
         let counterThree = 0;
-        setInterval(() =>{
-            if(counterThree == 60){
+        setInterval(() => {
+            if (counterThree == 60) {
                 clearInterval();
-            }else{
-                counterThree +=1;
-            numberThree.innerHTML = counterThree + "%";
+            } else {
+                counterThree += 1;
+                numberThree.innerHTML = counterThree + "%";
             }
         }, 26)
     </script>
