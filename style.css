@@ -690,10 +690,16 @@ header {
 /* Blog Section Style End */
 
 /* Skill Section Style Start */
-.skill-contsiner {
+.skill-container {
     background-color: #E3ECF9;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.skill-box {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
 }
 
 .skill-title {
@@ -712,13 +718,25 @@ header {
     -webkit-text-stroke: 1px #333;
 }
 
-.skill {
+.skill-1 {
     width: 160px;
     height: 160px;
     position: relative;
 }
 
-.outer {
+.skill-2 {
+    width: 160px;
+    height: 160px;
+    position: relative;
+}
+
+.skill-3 {
+    width: 160px;
+    height: 160px;
+    position: relative;
+}
+
+.outer-1 {
     width: 160px;
     height: 160px;
     border-radius: 50%;
@@ -728,7 +746,27 @@ header {
 
 }
 
-.inner {
+.outer-2 {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    padding: 20px;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+        -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+
+}
+
+.outer-3 {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    padding: 20px;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+        -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+
+}
+
+.inner-1 {
     width: 120px;
     height: 120px;
     border-radius: 50%;
@@ -738,11 +776,106 @@ header {
     box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
         inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
         -0.5px -0.5px 0px rgba(255, 255, 255, 1),
-        0px 12px 10px -10px rgba(0,0,0,0.05);
+        0px 12px 10px -10px rgba(0, 0, 0, 0.05);
 }
 
-#number{
+.inner-2 {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+        inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
+        -0.5px -0.5px 0px rgba(255, 255, 255, 1),
+        0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+}
+
+.inner-3 {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+        inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
+        -0.5px -0.5px 0px rgba(255, 255, 255, 1),
+        0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+}
+
+#number-1 {
     font-weight: 600;
     color: #555;
+}
+
+#number-2 {
+    font-weight: 600;
+    color: #555;
+}
+
+#number-3 {
+    font-weight: 600;
+    color: #555;
+}
+
+.skill-circle-1 {
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+    animation: anim-1 2s linear forwards;
+}
+
+.skill-circle-2 {
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+    animation: anim-2 2s linear forwards;
+}
+
+.skill-circle-3 {
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+    animation: anim-3 2s linear forwards;
+}
+
+svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+@keyframes anim-1 {
+    100% {
+        stroke-dashoffset: 165;
+    }
+}
+
+@keyframes anim-2 {
+    100% {
+        stroke-dashoffset: 118;
+    }
+}
+
+@keyframes anim-3 {
+    100% {
+        stroke-dashoffset: 188;
+    }
+}
+@media screen and (max-width:576px) {
+    .skill-box{
+        display: flex;
+        flex-direction: column;
+        gap: 100px;
+        align-items: center;
+    }
 }
 /* Skill Section Style End */

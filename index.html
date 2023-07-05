@@ -299,28 +299,77 @@
         <!-- Blog Section End -->
 
         <!-- Skill Section Start -->
-        <section class="skill-contsiner">
-            <h4 class="skill-title">Skills</h4>
+        <section class="skill-container pb-5">
             <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <div class="skill">
-                            <div class="outer">
-                                <div class="inner">
-                                    <div id="number">
-                                        65%
+                <h4 class="skill-title">Skills</h4>
+                <div class=" skill-box">
+                    <div class="skill-box-1">
+                        <div class="skill-1">
+                            <div class="outer-1">
+                                <div class="inner-1">
+                                    <div id="number-1">
+
                                     </div>
                                 </div>
                             </div>
                             <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
                                 <defs>
-                                   <linearGradient id="GradientColor">
-                                      <stop offset="0%" stop-color="#e91e63" />
-                                      <stop offset="100%" stop-color="#673ab7" />
-                                   </linearGradient>
+                                    <linearGradient id="GradientColor">
+                                        <stop offset="0%" stop-color="#e91e63" />
+                                        <stop offset="100%" stop-color="#673ab7" />
+                                    </linearGradient>
                                 </defs>
-                                <circle cx="80" cy="80" r="70" stroke-linecap="round" />
-                        </svg>
+                                <circle class="skill-circle-1" cx="80" cy="80" r="70" stroke-linecap="round" />
+                            </svg>
+                            <div class="skill-content text-center mt-3">
+                                <h4>HTML</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-box-2">
+                        <div class="skill-2">
+                            <div class="outer-2">
+                                <div class="inner-2">
+                                    <div id="number-2">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                                <defs>
+                                    <linearGradient id="GradientColor">
+                                        <stop offset="0%" stop-color="#e91e63" />
+                                        <stop offset="100%" stop-color="#673ab7" />
+                                    </linearGradient>
+                                </defs>
+                                <circle class="skill-circle-2" cx="80" cy="80" r="70" stroke-linecap="round" />
+                            </svg>
+                            <div class="skill-content text-center mt-3">
+                                <h4>CSS</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-box-3">
+                        <div class="skill-3">
+                            <div class="outer-3">
+                                <div class="inner-3">
+                                    <div id="number-3">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                                <defs>
+                                    <linearGradient id="GradientColor">
+                                        <stop offset="0%" stop-color="#e91e63" />
+                                        <stop offset="100%" stop-color="#673ab7" />
+                                    </linearGradient>
+                                </defs>
+                                <circle class="skill-circle-3" cx="80" cy="80" r="70" stroke-linecap="round" />
+                            </svg>
+                            <div class="skill-content text-center mt-3">
+                                <h4>BOOTSTRAP</h4>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -353,6 +402,43 @@
         textload();
         setInterval(textload, 12000);
     </script>
+    <script>
+        let number = document.getElementById("number-1")
+        let counter = 0;
+        setInterval(() =>{
+            if(counter == 65){
+                clearInterval();
+            }else{
+                counter +=1;
+            number.innerHTML = counter + "%";
+            }
+        }, 30)
+    </script>
+    <script>
+        let numberTwo = document.getElementById("number-2")
+        let counterTwo = 0;
+        setInterval(() =>{
+            if(counterTwo == 75){
+                clearInterval();
+            }else{
+                counterTwo +=1;
+            numberTwo.innerHTML = counterTwo + "%";
+            }
+        }, 20)
+    </script>
+    <script>
+        let numberThree = document.getElementById("number-3")
+        let counterThree = 0;
+        setInterval(() =>{
+            if(counterThree == 60){
+                clearInterval();
+            }else{
+                counterThree +=1;
+            numberThree.innerHTML = counterThree + "%";
+            }
+        }, 26)
+    </script>
+
 </body>
 
 </html>
