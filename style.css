@@ -16,12 +16,13 @@ header {
     background-attachment: fixed;
 }
 
+
 .nav-item a {
     text-decoration: none;
     color: white;
     font-size: 16px;
     transition: .5s ease;
-    padding: 6px 20px;
+    padding: 0px 15px;
 }
 
 .nav-item a:hover {
@@ -61,7 +62,7 @@ header {
     position: relative;
     font-size: 35px;
     font-weight: 900;
-    color: rgb(192, 53, 53);
+    color: #c49b66;
 }
 
 .frist-text {
@@ -106,7 +107,7 @@ header {
 }
 
 .hero-social-link a:hover {
-    color: rgb(192, 53, 53);
+    color: #c49b66;
     opacity: 1;
 }
 
@@ -284,7 +285,7 @@ header {
     }
 
     .about-img img {
-        width: 100%;
+        width: 100% !important;
         height: fit-content;
     }
 
@@ -293,6 +294,11 @@ header {
         padding-right: 5px;
         padding-left: 5px;
         font-size: 25px;
+    }
+    .about-btns{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
     }
 }
 
@@ -715,6 +721,9 @@ header {
     .blog-box {
         gap: 50px;
     }
+    .content{
+        bottom: -60px;
+    }
 }
 
 /* Blog Section Style End */
@@ -1125,6 +1134,7 @@ footer {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
 }
+
 footer p {
     color: #999;
     font-weight: 400;
@@ -1133,4 +1143,5 @@ footer p {
     letter-spacing: 2px;
     text-align: center;
 }
+
 /* Footer Style End */
