@@ -120,7 +120,12 @@ header {
     color: #c49b66;
     opacity: 1;
 }
-
+@media screen and (max-width:380px) {
+    .text-effect{
+        width: 100%;
+        border: none !important;
+    }
+}
 @media screen and (max-width:576px) {
     .text-effect {
         margin: 0;
@@ -128,12 +133,9 @@ header {
         right: 0;
         left: 0;
         padding-top: 100px;
-
-    }
-
-    .text-effect {
+        width: 100%;
         backdrop-filter: blur(0);
-        border: none;
+        border: none !important;
     }
 
     header {
