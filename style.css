@@ -16,6 +16,15 @@ header {
     background-attachment: fixed;
 }
 
+.navbar-brand img {
+    transition: .4s ease-in-out;
+}
+
+.navbar-brand:hover img {
+    box-shadow: 1px 1px 50px 1px white,
+        -1px -1px 50px -1px white;
+
+}
 
 .nav-item a {
     text-decoration: none;
@@ -56,6 +65,7 @@ header {
     padding-bottom: 100px;
     left: -200px;
     bottom: -100px;
+    box-shadow: -1px -1px 10px 1px #c49b66;
 }
 
 .text {
@@ -295,7 +305,8 @@ header {
         padding-left: 5px;
         font-size: 25px;
     }
-    .about-btns{
+
+    .about-btns {
         display: flex;
         flex-direction: column;
         text-align: center;
@@ -721,7 +732,8 @@ header {
     .blog-box {
         gap: 50px;
     }
-    .content{
+
+    .content {
         bottom: -60px;
     }
 }
